@@ -1,4 +1,4 @@
-FROM node:carbon
+FROM atlassianlabs/docker-node-jdk-chrome-firefox
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
@@ -13,5 +13,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
-# Commands
-RUN npm install -g ionic@latest @angular/cli@latest firebase-tools@latest
+# Install Ionic, Angular and Firebase tools
+
+RUN npm install -g \
+    ionic@latest @angular/cli@latest firebase-tools@latest
