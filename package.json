@@ -1,0 +1,26 @@
+{
+  "name": "ionic-angular-firebase-tools",
+  "version": "0.1.0",
+  "description": "Auto-updating Docker image based on NodeJS official image with Ionic, Angular CLI and Firebase Tools installed.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roalcantara/node-ionic-angular-firebase-tools.git"
+  },
+  "keywords": [
+    "node",
+    "ionic",
+    "angular-cli",
+    "firebase-tools"
+  ],
+  "author": "roalcantara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roalcantara/node-ionic-angular-firebase-tools/issues"
+  },
+  "homepage": "https://github.com/roalcantara/node-ionic-angular-firebase-tools#readme",
+  "dependencies": {
+    "@angular/cli": "7.0.6",
+    "firebase-tools": "6.1.0",
+    "ionic": "4.3.1"
+  }
+}
