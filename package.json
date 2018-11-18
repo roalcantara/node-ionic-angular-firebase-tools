@@ -6,6 +6,18 @@
     "type": "git",
     "url": "git+https://github.com/roalcantara/node-ionic-angular-firebase-tools.git"
   },
+  "scripts": {
+    "version:current": "echo $npm_package_version",
+    "version:commit": "git commit -am \"chore(release): Bump version to $(npm run version:current --silent)\"",
+    "version:major": "npm --no-git-tag-version version major && npm run version:commit",
+    "version:minor": "npm --no-git-tag-version version minor && npm run version:commit",
+    "version:patch": "npm --no-git-tag-version version patch && npm run version:commit",
+    "docker:build": "docker build -t node-ionic-angular-firebase-tools .",
+    "docker:run": "docker run node-ionic-angular-firebase-tools",
+    "docker:tag": "docker tag node-ionic-angular-firebase-tools roalcantara/node-ionic-angular-firebase-tools",
+    "docker:push": "docker push roalcantara/node-ionic-angular-firebase-tools",
+    "docker:build:push": "npm run docker:build && npm run docker:tag && npm run docker:push"
+  },
   "keywords": [
     "node",
     "ionic",
