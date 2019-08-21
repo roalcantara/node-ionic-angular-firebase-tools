@@ -31,8 +31,8 @@
   },
   "homepage": "https://github.com/roalcantara/node-ionic-angular-firebase-tools#readme",
   "dependencies": {
-    "@angular/cli": "7.0.6",
-    "firebase-tools": "6.1.0",
-    "ionic": "4.3.1"
+    "@angular/cli": "8.2.2",
+    "firebase-tools": "7.2.4",
+    "ionic": "5.2.5"
   }
 }
